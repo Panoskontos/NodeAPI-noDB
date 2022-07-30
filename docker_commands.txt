@@ -19,3 +19,9 @@ sudo docker run -p 3000:3000 -d --name mycontainer node-image
 
 kill container
 sudo docker kill efd3424f2ebc
+
+Start all containers
+sudo docker compose up
+
+Stop containers
+sudo docker compose down

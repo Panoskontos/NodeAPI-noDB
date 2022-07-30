@@ -1,14 +1,18 @@
 const express = require('express')
 const app = express()
+const dotenv = require('dotenv').config();
+
 
 app.use(express.json())
+
+require('./initDB')();
 
 const courses = [
     {id:1, name:"Panos"},
     {id:2, name:"Nikos"},
     {id:3, name:"Loki"},
     {id:4, name:"Thor"},
-    {id:5, name:"Zeus"}
+    {id:50, name:"Zeus"}
 
 ]
 
