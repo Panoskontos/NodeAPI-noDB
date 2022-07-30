@@ -1,0 +1,21 @@
+sudo docker images
+
+sudo docker ps
+
+
+Pull Enviroment
+sudo docker pull mongo:latest
+
+
+Build Image
+sudo docker build -t node-app .
+
+Delete image
+sudo docker image rm 84a5000f3fa4
+
+
+Create and run container
+sudo docker run -p 3000:3000 -d --name mycontainer node-image
+
+kill container
+sudo docker kill efd3424f2ebc
