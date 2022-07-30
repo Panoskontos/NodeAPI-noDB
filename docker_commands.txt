@@ -11,7 +11,7 @@ Build Image
 sudo docker build -t node-app .
 
 Delete image
-sudo docker image rm 84a5000f3fa4
+sudo docker image rm 84a5000f3fa4 -f
 
 
 Create and run container
